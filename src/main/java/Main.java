@@ -38,15 +38,16 @@ public class Main {
                 }
             }
 
-            //for (int draw = 0; draw < k; draw++){
+            for (int draw = 0; draw < k; draw++){//
                 Random random = new Random();
                 int rand = random.nextInt(rows - 1);
                 for (int b = 0; b < col; b++){
-                    testObjects[0][b] = objects[0][b];
-                    testObjects[1][b] = objects[22][b];
-                    testObjects[2][b] = objects[38][b];
+                    testObjects[draw][b] = objects[rand][b];
+                    //testObjects[0][b] = objects[0][b];
+                    //testObjects[1][b] = objects[22][b];
+                    //testObjects[2][b] = objects[38][b];
                 }
-            //}
+            }//
 
         } catch (IOException | CsvException e) {
             e.printStackTrace();
